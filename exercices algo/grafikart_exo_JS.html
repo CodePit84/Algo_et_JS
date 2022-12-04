@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            
+            // var phrase = "Il etait une fois le premier de France, il etait le plus vieux";
+            
+            // var frequence = function(phrase){
+            //     var mots = phrase.toLowerCase().split(' ');
+            //     var compteur = {};
+            //     for (i = 0; i<mots.length; i++){
+            //         mot = mots[i]
+            //         console.log(mots[i]);
+            //             if (compteur[mot] === undefined){
+            //             compteur[mot]=1;
+            //             } else {
+            //                 compteur[mot]++
+            //             }
+            //     }
+            //     return compteur;
+            // }
+
+
+            //somme eleve1=49 et moyeleve1=16.33
+            //somme eleve2=43 et moyeleve2=14.33
+            var eleve1 = {
+                nom: 'Jean',
+                note: [15, 16, 18, 2]
+            }
+            var eleve2 = {
+                nom: 'Marc',
+                note: [5, 18, 20, 18]
+            }
+
+            //estMeilleur(eleve1, eleve2)
+            // let somme=0;
+            // let moyNotes=0;
+            // let moy1=0;
+
+            //var moyenne = function (moy) {
+            function moyenne(moy) {
+                let somme = 0;
+                let moyNotes = moy.note;
+                for (i=0; i<moyNotes.length; i++) {
+                somme += moyNotes[i];
+                }
+                let moy1 = somme / moyNotes.length;
+                //return somme;
+                //console.log(somme);
+                return moy1;
+                //console.log(moy1);
+            }
+
+            function estMeilleur(a, b) {
+                let boss = false;
+                moyA = moyenne(a);
+                moyB = moyenne(b);
+                if (moyA > moyB) {
+                    boss = true;
+                }
+                return boss;
+            }
+            //console.log(moyNotes);
+            //console.log(somme);
+            //return moyNotes;
+            //return somme;
+
+            // let aray = [10, 11, 12];
+            // let sum = 0;
+            // let moy1 = 0;
+            // for (j=0; j<aray.length; j++) {
+            // sum += aray[j];
+            // moy1 = sum / aray.length; 
+            // }
+            // console.log(sum);
+            // console.log(moy1);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

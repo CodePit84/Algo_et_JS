@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            var i = 0
+            var classA = [{
+                nom: 'Marc',
+                moyenne: 15
+            }, {
+                nom: 'Marion',
+                moyenne: 8 
+            }, {
+                nom: 'Antoine',
+                moyenne: 4
+            }]
+
+            var classB = [{
+                nom: 'Jean',
+                moyenne: 17
+            }, {
+                nom: 'Marine',
+                moyenne: 2 
+            }, {
+                nom: 'Pedro',
+                moyenne: 13
+            },  {
+                nom: 'Monique',
+                moyenne: 7
+            }]
+            // console.log(eleves.length);
+            // console.log(eleves[0].moyenne)
+            // console.log(eleves[i].moyenne);
+            // console.log(eleves.moyenne[i]); MARCHE PAS
+
+            function afficheQuiALaMoyenne(eleves) {
+                
+                for (i=0; i<eleves.length; i++) {
+                    if ((eleves[i].moyenne) < 10) {
+                        console.log(eleves[i].nom + " est en dessous de la moyenne")
+                    }
+                }
+            }
+
+            afficheQuiALaMoyenne(classA)
+            afficheQuiALaMoyenne(classB)
+
+            // on cree une boucle for pour consulter l'ensemble des moyennes
+            // a chaque fois que la moyenne est inferieur a 10 on affiche "en dessous de la moyenne"
+            
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
